@@ -1,0 +1,20 @@
+[all]
+#ubuntu1 ansible_port=2006
+#ubuntu2 ansible_port=2008
+#rocky1  ansible_port=2014
+#rocky2  ansible_port=2017
+ubuntu3 ansible_port=2025
+
+[db_server]
+ubuntu4 ansible_port=2026
+
+[web_server]
+rocky3 ansible_port=2027
+
+[file_server]
+rocky4 ansible_port=2028
+
+[all:vars]
+ansible_user=root
+ansible_host=localhost
+ansible_private_key_file=~/.ssh/id_ed25519
